@@ -7,26 +7,26 @@ import Enterprise from './enterprise';
 import Contact from './contact';
 import Register from './register';
 
-import '../style/app.css';
+import '../style/style.css';
 
 function App() {
 
   return (
       <Router>
-        <div className="container">
+        <div>
           
-          <navbar>
+          <nav className='container'>
 
             <Link className='brand' to='/'>Ferro Technics</Link>
             
             <ul className='navLinks'>
-              <li><Link to='/courses'>Courses</Link></li>
-              <li><Link to='/enterprise'>Enterprise</Link></li>
-              <li><Link to='/contact'>Contact</Link></li>
-              <li><Link to='/register'>Register</Link></li>
+              <Link to='/courses'><li>Courses</li></Link>
+              <Link to='/enterprise'><li>Enterprise</li></Link>
+              <Link to='/contact'><li>Contact</li></Link>
+              <Link to='/register'><li id='register'>Register</li></Link>
             </ul>
 
-          </navbar>
+          </nav>
           
           <Switch>
             <Route path='/'>
@@ -45,6 +45,22 @@ function App() {
               <Register />
             </Route>
           </Switch>
+
+          <footer className='container'>
+
+            <ul className="footerLinks">
+              <Link to='/courses'><li>Courses</li></Link>
+              <Link to='/enterprise'><li>Enterprise</li></Link>
+              <Link to='/contact'><li>Contact</li></Link>
+            </ul>
+
+            <ul className="footerSocial">
+              <Link to='/'><li>LinkedIn</li></Link>
+              <Link to='/'><li>Facebook</li></Link>
+              <Link to='/'><li>Twitter</li></Link>
+            </ul>
+
+          </footer>
 
         </div>
       </Router>
