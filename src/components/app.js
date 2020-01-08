@@ -7,6 +7,12 @@ import Enterprise from './enterprise';
 import Contact from './contact';
 import Register from './register';
 
+import Ec from './courses/eccouncil';
+import Fti from './courses/fti';
+import Iapp from './courses/iapp';
+import Isaca from './courses/isaca';
+import Pecb from './courses/pecb';
+
 import '../style/style.css';
 
 function App() {
@@ -29,21 +35,20 @@ function App() {
           </nav>
           
           <Switch>
-            <Route path='/'>
-              <Home />
-            </Route>
-            <Route path='/courses'>
-              <Courses />
-            </Route>
-            <Route path='/enterprise'>
-              <Enterprise />
-            </Route>
-            <Route path='/contact'>
-              <Contact />
-            </Route>
-            <Route path='/register'>
-              <Register />
-            </Route>
+
+            <Route exact path='/'><Home /></Route>
+            
+            <Route exact path='/courses'><Courses /></Route>
+            <Route path='/courses/pecb'><Ec/></Route>
+            <Route path='/courses/isaca'><Fti/></Route>
+            <Route path='/courses/iapp'><Iapp/></Route>
+            <Route path='/courses/ec_council'><Isaca/></Route>
+            <Route path='/courses/fti'><Pecb/></Route>
+
+            <Route path='/enterprise'><Enterprise /></Route>
+            <Route path='/contact'><Contact /></Route>
+            <Route path='/register'><Register /></Route>
+
           </Switch>
 
           <footer className='container'>

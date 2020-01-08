@@ -1,30 +1,25 @@
-.home {font-family: var(--fira)}
 .home .heading {font-weight: 500; font-size: 2.7rem;}
 .home .subheading {font-weight: 500}
 .description {font-weight: 300}
 
-.jumbotron {
-    background-color: var(--brand-color);
-    color: white;
-}
-
-.about {background-color: var(--secondary-color); height: auto;}
+.jumbotron {background-color: var(--brand-color);color: white}
+.about {background-color: var(--secondary-color); height: auto}
 
 @media only screen and (min-device-width: 850px){
     /* Position (flex) properties for jumbotron */
-    .jumbotron {height: 50vh}
-    .jumbotron .container {
+    .home .jumbotron {height: 50vh}
+    .home .jumbotron .container {
         height: inherit;
         display: grid;
         grid-template-columns: (2, 1fr);
     }
 
-    .container .jumboImage {
+    .home .container .jumboImage {
         grid-column-start: 1;
         grid-column-end: 2;
     }
 
-    .container .jumboText {
+    .home .container .jumboText {
         grid-column-start: 2;
         grid-column-end: 3;
         display: flex;
@@ -34,30 +29,30 @@
     }
 
     /* Design for jumbotron elements */
-    .jumbotron .container .heading {
+    .home .jumbotron .container .heading {
         border: solid 0.35rem white;
         padding: 0.6rem 0.6rem;
         text-align: center;
     }
 
-    .jumbotron h3 {
+    .home .jumbotron h3 {
         margin: 1rem;
     }
 
     /* Position (flex) properties for currentPrograms */
-    .currentPrograms .programs {
+    .home .currentPrograms .programs {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
     }
     /* Design for currentPrograms' elements */
-    .currentPrograms .container .heading{
+    .home .currentPrograms .container .heading{
         margin-top: 2rem;
         margin-bottom: 1.5rem;
         text-align: center;
     }
 
-    .p-item {
+    .home .p-item {
         border: solid 0.02rem black;
         margin: 1.5rem;
         padding: 1rem;
@@ -65,20 +60,20 @@
     }
 
     /* Position (flex) properties for about */
-    .about .content {
+    .home .about .content {
         display: flex;
         justify-content: space-between;
     }
 
-    .about .image {
+    .home .about .image {
         margin: 0 auto;
     }
     /* Design for about elements */
-    .about .description {
+    .home .about .description {
         font-weight: 300;
     }
 
-    .about .container .heading {
+    .home .about .container .heading {
         padding-top: 5rem;
     }
 }
