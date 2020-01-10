@@ -1,0 +1,66 @@
+@media only screen and (min-device-width: 850px) {
+    /* Position (flex) properties for jumbotron */
+    .contact {
+        .add {margin-bottom: 0.5rem}
+        .jumbotron {
+            height: 45vh;
+            .container {
+                display: grid;
+                grid-template-columns: (2, 1fr);
+                .jumboheading {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    .heading {font-size: 2.7rem}
+                }
+                .jumboForm {
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    form {
+                        display: flex;
+                        flex-flow: column;
+                    }
+                }
+                // display: flex;
+                // flex-flow: row;
+                // justify-content: space-around;
+                // .jumboheading .heading{font-size: 2.7rem}
+                // .jumboForm form {
+                //     height: inherit;
+                //     display: grid;
+                //     grid-template-columns: (2, 1fr);
+                //     .first {
+                //         grid-column-start: 1;
+                //         grid-column-end: 2;
+                //     }
+                //     .second {
+                //         grid-column-start: 2;
+                //         grid-column-end: 3;
+                //     }
+                // }
+            }
+        }
+        .about {
+            .container{
+                display: flex;
+                flex-flow: row;
+                justify-content: space-around;
+                .address {
+                    align-self: center;
+                    .heading {
+                        font-size: 2rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    .subheading {font-size: 1.3rem}
+                    .description {
+                        font-size: 1.1rem;
+                        .bold {font-weight: 400}
+                    }
+                }
+                .map .googleMap {
+                    width: 35.625rem;
+                    height: 26.5625rem;
+                }
+            }
+        }
+    }
+}

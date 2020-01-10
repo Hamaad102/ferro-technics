@@ -1,0 +1,23 @@
+.courses .heading {font-size: 2.7rem}
+
+
+@media only screen and (min-device-width: 850px){
+    .courses .jumbotron {height: 80vh}
+    /* Position (flex) properties for jumbotron */
+    .courses .container {
+        display: flex;
+        flex-flow: column;
+        .jumboText {margin: 7rem 0}
+        .programs {
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly
+        }
+    }
+    /* Design for program elements */
+    .courses .p-item {
+        border: solid 0.25rem white;
+        padding: 1rem;
+    }
+}

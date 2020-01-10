@@ -13,7 +13,7 @@ import Iapp from './courses/iapp';
 import Isaca from './courses/isaca';
 import Pecb from './courses/pecb';
 
-import '../style/style.css';
+import '../style/style.scss';
 
 function App() {
 

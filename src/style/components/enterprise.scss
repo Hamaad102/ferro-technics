@@ -1,0 +1,51 @@
+@media only screen and (min-device-width: 850px){
+    .enterprise .jumbotron {height: 80vh}
+    
+    /* Position (flex) properties for jumbotron */
+    .enterprise {
+        .jumbotron .container {
+            height: inherit;
+            display: flex;
+            flex-flow: column
+        }
+        .heading {
+            margin-top: 6rem; 
+            margin-bottom: 1rem
+        }
+        .subheading {margin-bottom: 1.2rem}
+        .list {
+            display: flex; 
+            flex-direction: row; 
+            padding-bottom: 5vh;
+            .left {
+                margin-top: 2rem; 
+                margin-left: 5rem; 
+                margin-right: 2rem
+            }
+            .right {
+                margin-top: 2rem; 
+                margin-left: 2rem; 
+                margin-right: 2rem
+            }
+            li {margin: 0.75rem}
+        }
+    }
+    /* Design for jumbotron elements */
+    .enterprise {
+        .heading {font-size: 3rem}
+        .subheading {font-size: 1.5rem}
+        .list li {font-size: 1.25rem}
+    }
+}
+
+@media only screen and (min-device-width: 850px) and (max-device-width: 1024px) {
+    .enterprise {
+        .heading {font-size: 4vh}
+        .subheading {font-size: 1.1rem}
+        .list li {font-size: 1rem}
+    }
+}
+
+
+
+/* gotta get the text to resize at certain points otherwise it creates UI errors */

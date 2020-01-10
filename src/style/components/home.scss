@@ -1,0 +1,69 @@
+@media only screen and (min-device-width: 850px){
+    /* Position (flex) properties for jumbotron */
+    .home .jumbotron {
+        height: 50vh;
+        .container {
+            height: inherit;
+            display: grid;
+            grid-template-columns: (2, 1fr);
+            .jumboImage {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            .jumboText {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    /* Design for jumbotron elements */
+    .home .jumbotron {
+        h3 {margin: 1rem}
+        .container {
+            .heading {
+                border: solid 0.35rem white;
+                padding: 0.6rem 0.6rem;
+                text-align: center;
+            }
+        }
+    }
+    /* Position (flex) properties for currentPrograms */
+    .home .currentPrograms .programs {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    /* Design for currentPrograms' elements */
+    .home {
+        .currentPrograms .container .heading {
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .p-item {
+            border: solid 0.02rem black;
+            margin: 1.5rem;
+            padding: 1rem;
+            flex-basis: 25%;
+        }
+    }
+
+    /* Position (flex) properties for about */
+    .home .about {
+        .context {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {margin: 0 auto}
+    }
+    /* Design for about elements */
+    .home {
+        .heading {font-size: 2.7rem}
+        .about .container .heading {padding-top: 5rem}
+    }
+}
