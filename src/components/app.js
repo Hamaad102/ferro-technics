@@ -1,17 +1,17 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
-import Home from './home';
-import Courses from './courses';
-import Enterprise from './enterprise';
-import Contact from './contact';
-import Register from './register';
+import Home from './pages/home';
+import Courses from './pages/courses';
+import Enterprise from './pages/enterprise';
+import Contact from './pages/contact';
+import Register from './pages/register';
 
-import Ec from './courses/eccouncil';
-import Fti from './courses/fti';
-import Iapp from './courses/iapp';
-import Isaca from './courses/isaca';
-import Pecb from './courses/pecb';
+import Ec from './pages/courses/eccouncil';
+import Fti from './pages/courses/fti';
+import Iapp from './pages/courses/iapp';
+import Isaca from './pages/courses/isaca';
+import Pecb from './pages/courses/pecb';
 
 import '../style/style.scss';
 
