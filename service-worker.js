@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ferro-technics/precache-manifest.ec76a7224a1c980e0b6ce4e9952da81e.js"
+  "/ferro-technics/precache-manifest.2a376b49625d563997638a86cd1fb4cc.js"
 );
 
 self.addEventListener('message', (event) => {
