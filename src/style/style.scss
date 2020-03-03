@@ -1,30 +1,53 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500&display=swap');
 
-$fira: 'Fira Sans', sans-serif;
 $brand-color: #184586;
-$secondary-color: #F9FAFA;
+$gold: #f1b900;
+$gray: #f9fafa;
 
 @import './components/navFooter.scss';
 @import './components/home.scss';
-@import './components/courses.scss';
-@import './components/enterprise.scss';
+@import './components/services.scss';
+@import './components/about.scss';
 @import './components/contact.scss';
+// @import './components/courses.scss';
 
-*{
-    box-sizing: border-box;
-    font-family: $fira;
-    margin: 0;
-    padding: 0;
+* {
+	box-sizing: border-box;
+	font-family: 'Fira Sans', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
-    width: 92%;
-    margin: 0 auto;
+	width: 92%;
+	margin: 0 auto;
 }
 
-.heading {font-weight: 500}
-.subheading {font-weight: 400}
-.description {font-weight: 300}
+.jumboBlue {
+	background-color: $brand-color;
+	color: white;
+}
 
-.jumbotron {background-color: $brand-color;color: white}
-.about {background-color: $secondary-color; height: auto}
+.group {
+	background-color: white;
+	color: black;
+}
+
+// .heading {
+// 	font-weight: 500;
+// }
+// .subheading {
+// 	font-weight: 400;
+// }
+// .description {
+// 	font-weight: 300;
+// }
+
+// .jumbotron {
+// 	background-color: $brand-color;
+// 	color: white;
+// }
+// .about {
+// 	background-color: $secondary-color;
+// 	height: auto;
+// }

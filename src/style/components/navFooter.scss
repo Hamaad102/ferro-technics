@@ -1,68 +1,115 @@
-nav, footer {
-    ul {list-style: none}
-    a {
-        text-decoration: none;
-        color: inherit;
-        font-weight: 400
-    }
+@media only screen and (min-device-width: 1440px) {
+	footer {
+		font-size: 1.1rem;
+		.middleFoot {
+			.footHead {
+				font-size: 1.2rem;
+			}
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
 }
 
-@media only screen and (min-device-width: 850px){
-    /* Position (flex) properties for nav and footer */
-    nav,
-    footer {
-        display: flex;
-        padding: 1.875rem;
-        align-items: center;
-    }
-
-    nav {
-        justify-content: flex-end;
-        .brand {margin-right: auto}
-    }
-
-    footer {
-        justify-content: flex-start;
-        .footerSocial {margin-left: auto}
-        li {
-            display: inline-block;
-            padding: 0 0.625rem
-        }
-    }
-    /* Design for both navbar elements */
-    nav {
-        .navLinks li {
-            display: inline-block;
-            padding: 1rem 0.75rem;
-            margin: 0 0.25rem;
-            transition: background-color 0.3s ease;
-        }
-        .navLinks li:hover {background-color: rgba(0, 0, 0, 0.03)}
-        #register {
-            background-color: $brand-color;
-            color: white;
-            padding: 1rem 0.85rem;
-        }
-        #register:hover {background-color: #123566}
-    }
+@media only screen and (max-device-width: 1024px) {
+	footer {
+		font-size: 0.85rem;
+		width: 82% !important;
+		.middleFoot {
+			margin-right: 2rem !important;
+			.footHead {
+				font-size: 1rem;
+			}
+			p {
+				font-size: 0.8rem;
+			}
+		}
+	}
 }
 
-@media only screen and (max-device-width: 849px){
-    nav {
-        display: flex;
-        justify-content: flex-start;
-        padding: 1.875rem;
-        .brand {
-            margin: 0 auto;
-            order: 10;
-        }
-        .navLinks li {display: none}
-    }
+@media only screen and (min-device-width: 850px) {
+	.navBar {
+		background-color: $brand-color;
+		nav {
+			display: flex;
+			padding: 1.875rem;
+			align-items: center;
+			justify-content: flex-end;
+			a {
+				font-weight: 200;
+				text-decoration: none;
+				color: white;
+			}
+			.brand {
+				margin-right: auto;
+				font-weight: 400;
+			}
+			.navLinks li {
+				display: inline-block;
+				padding: 1rem 0.75rem;
+				margin: 0 0.25rem;
+				transition: background-color 0.3s ease;
+			}
+			.navLinks li:hover {
+				color: $gold;
+			}
+			#register {
+				background-color: $gold;
+				color: white;
+				padding: 0.75rem 0.95rem;
+				border: 0.075em solid $gold;
+				border-radius: 90px;
+			}
+			#register:hover {
+				background-color: $brand-color;
+				color: $gold;
+				border-color: $gold;
+			}
+		}
+	}
 
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .footerLinks {display: none}
-    }
+	footer {
+		height: 30vh;
+		width: 82%;
+		margin: 0 auto;
+		justify-content: space-between;
+		display: flex;
+		align-items: center;
+
+		.leftFoot {
+			p {
+				font-weight: 300;
+			}
+			ul {
+				margin-top: 2rem;
+				list-style: none;
+				display: flex;
+				justify-content: space-evenly;
+			}
+		}
+
+		.middleFoot {
+			margin-right: 10rem;
+			.footHead {
+				font-weight: 400;
+				margin-bottom: 0.5rem;
+			}
+			p {
+				font-weight: 300;
+			}
+		}
+
+		.rightFoot {
+			.footerLinks a {
+				list-style: none;
+				text-decoration: none;
+				color: inherit;
+				font-weight: 300;
+			}
+			.footerLinks li {
+				margin: 0.45rem;
+			}
+		}
+	}
 }

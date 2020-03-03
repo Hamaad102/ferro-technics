@@ -1,0 +1,89 @@
+.about {
+	background-color: $gray;
+}
+
+@media only screen and (min-device-width: 1440px) {
+	.about .container {
+		.group {
+			.title {
+				font-size: 3rem;
+			}
+			.text {
+				font-size: 1rem;
+			}
+			.leader {
+				.name {
+					font-size: 1.3rem;
+				}
+				.userTitle {
+					font-size: 0.95rem;
+				}
+				.qualifications {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-device-width: 1024px) {
+	.about .container {
+		.group {
+			.title {
+				font-size: 2.8rem;
+			}
+			.text {
+				font-size: 0.9rem;
+			}
+			.leader {
+				.name {
+					font-size: 1.1rem;
+				}
+				.userTitle {
+					font-size: 0.75rem;
+				}
+				.qualifications {
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-device-width: 1024px) {
+	.about .container {
+		height: 135vh;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-direction: column;
+		.group {
+			width: inherit;
+			.title {
+				font-weight: 300;
+				text-align: center;
+				margin-top: 4rem;
+				margin-bottom: 3rem;
+			}
+			.text {
+				text-align: center;
+				font-weight: 300;
+				margin-bottom: 4rem;
+			}
+			.leader {
+				display: flex;
+				justify-content: space-evenly;
+				margin-bottom: 2rem;
+				.name {
+					font-weight: 300;
+				}
+				.userTitle {
+					font-weight: 300;
+				}
+				.qualifications {
+					font-weight: 200;
+				}
+			}
+		}
+	}
+}

@@ -1,66 +1,232 @@
-@media only screen and (min-device-width: 850px) {
-    /* Position (flex) properties for jumbotron */
-    .contact {
-        .add {margin-bottom: 0.5rem}
-        .jumbotron {
-            height: 45vh;
-            .container {
-                display: grid;
-                grid-template-columns: (2, 1fr);
-                .jumboheading {
-                    grid-column-start: 1;
-                    grid-column-end: 2;
-                    .heading {font-size: 2.7rem}
-                }
-                .jumboForm {
-                    grid-column-start: 2;
-                    grid-column-end: 3;
-                    form {
-                        display: flex;
-                        flex-flow: column;
-                    }
-                }
-                // display: flex;
-                // flex-flow: row;
-                // justify-content: space-around;
-                // .jumboheading .heading{font-size: 2.7rem}
-                // .jumboForm form {
-                //     height: inherit;
-                //     display: grid;
-                //     grid-template-columns: (2, 1fr);
-                //     .first {
-                //         grid-column-start: 1;
-                //         grid-column-end: 2;
-                //     }
-                //     .second {
-                //         grid-column-start: 2;
-                //         grid-column-end: 3;
-                //     }
-                // }
-            }
-        }
-        .about {
-            .container{
-                display: flex;
-                flex-flow: row;
-                justify-content: space-around;
-                .address {
-                    align-self: center;
-                    .heading {
-                        font-size: 2rem;
-                        margin-bottom: 0.5rem;
-                    }
-                    .subheading {font-size: 1.3rem}
-                    .description {
-                        font-size: 1.1rem;
-                        .bold {font-weight: 400}
-                    }
-                }
-                .map .googleMap {
-                    width: 35.625rem;
-                    height: 26.5625rem;
-                }
-            }
-        }
-    }
+$cHeight: 90vh;
+
+@media only screen and (min-device-width: 1440px) {
+	.googleMap {
+		width: 35.625rem;
+		height: 26.5625rem;
+	}
+}
+
+@media only screen and (max-device-width: 1024px) {
+	.googleMap {
+		width: 25.625rem;
+		height: 26.5625rem;
+	}
+
+	.container .group .address {
+		height: $cHeight - 45vh;
+		grid-gap: 0.5rem;
+		grid-template-columns: (3, 1fr);
+		grid-template-rows: (10, 1fr) !important;
+		.examOffice {
+			grid-column-start: 1 !important;
+			grid-column-end: 2 !important;
+			grid-row-start: 6 !important;
+			grid-row-end: 7 !important;
+		}
+		.examNum {
+			grid-column-start: 1 !important;
+			grid-column-end: 2 !important;
+			grid-row-start: 7 !important;
+			grid-row-end: 8 !important;
+		}
+		.support {
+			grid-column-start: 1 !important;
+			grid-column-end: 2 !important;
+			grid-row-start: 8 !important;
+			grid-row-end: 9 !important;
+		}
+		.market {
+			grid-column-start: 1 !important;
+			grid-column-end: 2 !important;
+			grid-row-start: 9 !important;
+			grid-row-end: 10 !important;
+		}
+	}
+}
+
+@media only screen and (min-device-width: 1024px) {
+	.contact {
+		.jumboBlue {
+			height: 55vh;
+			.container {
+				display: flex;
+				height: 75%;
+				width: 85%;
+				justify-content: space-evenly;
+				align-items: center;
+				.heading {
+					font-weight: 500;
+					font-size: 3rem;
+					.goldText {
+						color: $gold;
+					}
+				}
+				.form {
+					display: grid;
+					grid-template-columns: (2, 1fr);
+					grid-template-rows: (5, 1fr);
+					grid-gap: 0.5rem;
+					$formHeight: 3rem;
+					$formWidth: 11rem;
+					$padLeft: 1rem;
+					$padRight: 1rem;
+					.first {
+						grid-column-start: 1;
+						grid-column-end: 2;
+						grid-row-start: 1;
+						grid-row-end: 2;
+						height: $formHeight;
+						width: $formWidth;
+						padding-left: $padLeft;
+						padding-right: $padRight;
+						border-radius: 3px;
+					}
+					.last {
+						grid-column-start: 2;
+						grid-column-end: 3;
+						grid-row-start: 1;
+						grid-row-end: 2;
+						height: $formHeight;
+						width: $formWidth;
+						padding-left: $padLeft;
+						padding-right: $padRight;
+						border-radius: 3px;
+					}
+					.email {
+						grid-column-start: 1;
+						grid-column-end: 2;
+						grid-row-start: 2;
+						grid-row-end: 3;
+						height: $formHeight;
+						width: $formWidth;
+						padding-left: $padLeft;
+						padding-right: $padRight;
+						border-radius: 3px;
+					}
+					.phone {
+						grid-column-start: 2;
+						grid-column-end: 3;
+						grid-row-start: 2;
+						grid-row-end: 3;
+						height: $formHeight;
+						width: $formWidth;
+						padding-left: $padLeft;
+						padding-right: $padRight;
+						border-radius: 3px;
+					}
+					.message {
+						grid-column-start: 1;
+						grid-column-end: 3;
+						grid-row-start: 3;
+						grid-row-end: 4;
+						height: $formHeight + 4;
+						padding-left: $padLeft;
+						padding-right: $padRight;
+						padding-top: 0.75rem;
+						border-radius: 3px;
+					}
+					.submit {
+						grid-column-start: 1;
+						grid-column-end: 3;
+						grid-row-start: 4;
+						grid-row-end: 5;
+						background-color: $gold;
+						border-radius: 3px;
+						border: solid 1px $gold;
+						height: $formHeight;
+					}
+					.submit:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		.location {
+			$fSize: 1.7rem;
+			background-color: $gray;
+			height: $cHeight;
+			display: flex;
+			align-items: center;
+			.container .group {
+				height: $cHeight - 20vh;
+				display: flex;
+				justify-content: space-evenly;
+				.map {
+					margin-top: 7rem;
+				}
+				.address {
+					height: $cHeight - 55vh;
+					margin-top: 8rem;
+					display: grid;
+					grid-gap: none;
+					grid-template-columns: (4, 1fr);
+					grid-template-rows: (9, 1fr);
+					.contactHeading {
+						font-weight: 400;
+					}
+					.text {
+						font-weight: 300;
+					}
+					.city {
+						font-weight: 500;
+						font-size: $fSize;
+
+						grid-column-start: 1;
+						grid-column-end: 3;
+						grid-row-start: 1;
+						grid-row-end: 2;
+					}
+					.mainAddress {
+						grid-column-start: 1;
+						grid-column-end: 2;
+						grid-row-start: 2;
+						grid-row-end: 3;
+					}
+					.mainNum {
+						grid-column-start: 1;
+						grid-column-end: 2;
+						grid-row-start: 3;
+						grid-row-end: 4;
+					}
+					.tollFree {
+						grid-column-start: 1;
+						grid-column-end: 2;
+						grid-row-start: 4;
+						grid-row-end: 5;
+					}
+					.fax {
+						grid-column-start: 1;
+						grid-column-end: 2;
+						grid-row-start: 5;
+						grid-row-end: 6;
+					}
+					.examOffice {
+						grid-column-start: 3;
+						grid-column-end: 4;
+						grid-row-start: 2;
+						grid-row-end: 3;
+					}
+					.examNum {
+						grid-column-start: 3;
+						grid-column-end: 4;
+						grid-row-start: 3;
+						grid-row-end: 4;
+					}
+					.support {
+						grid-column-start: 1;
+						grid-column-end: 3;
+						grid-row-start: 7;
+						grid-row-end: 8;
+					}
+					.market {
+						grid-column-start: 1;
+						grid-column-end: 3;
+						grid-row-start: 8;
+						grid-row-end: 9;
+					}
+				}
+			}
+		}
+	}
 }
