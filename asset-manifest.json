@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ferro-technics/static/css/main.3e22e988.chunk.css",
-    "main.js": "/ferro-technics/static/js/main.ad913880.chunk.js",
-    "main.js.map": "/ferro-technics/static/js/main.ad913880.chunk.js.map",
+    "main.css": "/ferro-technics/static/css/main.d2e7dd6e.chunk.css",
+    "main.js": "/ferro-technics/static/js/main.993bfa74.chunk.js",
+    "main.js.map": "/ferro-technics/static/js/main.993bfa74.chunk.js.map",
     "runtime-main.js": "/ferro-technics/static/js/runtime-main.c9442a6b.js",
     "runtime-main.js.map": "/ferro-technics/static/js/runtime-main.c9442a6b.js.map",
-    "static/js/2.1fe86dd9.chunk.js": "/ferro-technics/static/js/2.1fe86dd9.chunk.js",
-    "static/js/2.1fe86dd9.chunk.js.map": "/ferro-technics/static/js/2.1fe86dd9.chunk.js.map",
+    "static/js/2.42be3a56.chunk.js": "/ferro-technics/static/js/2.42be3a56.chunk.js",
+    "static/js/2.42be3a56.chunk.js.map": "/ferro-technics/static/js/2.42be3a56.chunk.js.map",
     "index.html": "/ferro-technics/index.html",
-    "precache-manifest.2a376b49625d563997638a86cd1fb4cc.js": "/ferro-technics/precache-manifest.2a376b49625d563997638a86cd1fb4cc.js",
+    "precache-manifest.598c225eb3f3f92965b6106e5818715d.js": "/ferro-technics/precache-manifest.598c225eb3f3f92965b6106e5818715d.js",
     "service-worker.js": "/ferro-technics/service-worker.js",
-    "static/css/main.3e22e988.chunk.css.map": "/ferro-technics/static/css/main.3e22e988.chunk.css.map",
-    "static/js/2.1fe86dd9.chunk.js.LICENSE": "/ferro-technics/static/js/2.1fe86dd9.chunk.js.LICENSE"
+    "static/css/main.d2e7dd6e.chunk.css.map": "/ferro-technics/static/css/main.d2e7dd6e.chunk.css.map",
+    "static/js/2.42be3a56.chunk.js.LICENSE": "/ferro-technics/static/js/2.42be3a56.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.c9442a6b.js",
-    "static/js/2.1fe86dd9.chunk.js",
-    "static/css/main.3e22e988.chunk.css",
-    "static/js/main.ad913880.chunk.js"
+    "static/js/2.42be3a56.chunk.js",
+    "static/css/main.d2e7dd6e.chunk.css",
+    "static/js/main.993bfa74.chunk.js"
   ]
 }
